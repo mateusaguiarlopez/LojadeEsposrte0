@@ -1,163 +1,162 @@
-/* RESET + BASE */
+
 body{
     margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-            background: #ffffff;
-                color: #111;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff;
+    color: #111;
 
-                    display: flex;
-                        justify-content: center; /* CENTRALIZA TUDO */
-                        }
+    display: flex;
+    justify-content: center;
+    }
 
-                        /* CONTAINER PRINCIPAL */
-                        .container{
-                            width: 100%;
-                                max-width: 1200px; /* LIMITE DA LARGURA */
-                                    padding: 0 20px;
+    
+    .container{
+width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px;
 
-                                        display: grid;
-                                            grid-template-areas: 
-                                                    "header header"
-                                                            "aside main"
-                                                                    "footer footer";
-                                                                        grid-template-columns: 1fr 4fr;
-                                                                        }
+display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 1fr 4fr;
+}
 
-                                                                        /* HEADER */
-                                                                        .header{
-                                                                            grid-area: header;
-                                                                                background: #ffffff;
-                                                                                    text-align: center;
-                                                                                        padding: 20px;
-                                                                                            border-bottom: 1px solid #e5e5e5;
-                                                                                            }
+                                                                
+    .header{
+    grid-area: header;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    }
 
-                                                                                            /* MAIN */
-                                                                                            .main{
-                                                                                                grid-area: main;
-                                                                                                    padding: 30px;
-                                                                                                    }
+                                                                    
+    .main{
+    grid-area: main;
+    padding: 30px;
+    }
 
-                                                                                                    /* ASIDE */
-                                                                                                    .aside{
-                                                                                                        grid-area: aside;
-                                                                                                            background: #fafafa;
-                                                                                                                padding: 20px;
-                                                                                                                    border-right: 1px solid #e5e5e5;
-                                                                                                                    }
+                                                                            
+    .aside{
+    grid-area: aside;
+background: #fafafa;
+    padding: 20px;
+    border-right: 1px solid #e5e5e5;
+    }
 
-                                                                                                                    /* FOOTER */
-                                                                                                                    .footer{
-                                                                                                                        grid-area: footer;
-                                                                                                                            background: #ffffff;
-                                                                                                                                text-align: center;
-                                                                                                                                    padding: 15px;
-                                                                                                                                        border-top: 1px solid #e5e5e5;
-                                                                                                                                        }
+                                                                                                
+.footer{
+grid-area: footer;
+    background: #ffffff;
+    text-align: center;
+    padding: 15px;
+border-top: 1px solid #e5e5e5;
+}
 
-                                                                                                                                        /* SEÇÕES */
-                                                                                                                                        section{
-                                                                                                                                            margin-bottom: 40px;
-                                                                                                                                            }
+                                                                                                                                
+    section{
+    margin-bottom: 40px;
+}
 
-                                                                                                                                            h2{
-                                                                                                                                                margin-left: 10px;
-                                                                                                                                                    color: #111;
-                                                                                                                                                    }
+    h2{
+    margin-left: 10px;
+    color: #111;
+}
 
-                                                                                                                                                    /* CARDS */
-                                                                                                                                                    .mae{
-                                                                                                                                                        display: flex;
-                                                                                                                                                            flex-wrap: wrap;
-                                                                                                                                                                justify-content: center;
-                                                                                                                                                                    gap: 20px;
-                                                                                                                                                                    }
+                                                                                                                                        
+    .mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-                                                                                                                                                                    .card{
-                                                                                                                                                                        background: #ffffff;
-                                                                                                                                                                            border-radius: 12px;
-                                                                                                                                                                                width: 220px;
-                                                                                                                                                                                    height: 320px;
-                                                                                                                                                                                        padding: 15px;
-                                                                                                                                                                                            text-align: center;
-                                                                                                                                                                                                border: 1px solid #e5e5e5;
-                                                                                                                                                                                                    transition: 0.3s;
+.card{
+background: #ffffff;
+    border-radius: 12px;
+    width: 220px;
+    height: 320px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s;
 
-                                                                                                                                                                                                        display: flex;
-                                                                                                                                                                                                            flex-direction: column;
-                                                                                                                                                                                                                justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-                                                                                                                                                                                                                    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-                                                                                                                                                                                                                    }
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
 
-                                                                                                                                                                                                                    .card:hover{
-                                                                                                                                                                                                                        transform: translateY(-5px);
-                                                                                                                                                                                                                            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+                                                                                                                                                                                                                
+    .imagem_produto{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+                                                                                                                                                                                                                                    
+    .d_produto{
+    font-weight: bold;
+    margin: 10px 0;
+    }
+
+    .p_produto{
+    color: #777;
+    font-size: 18px;
+    }
+
+    .btn_comprar{
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                        transition: 0.3s;
+                                                                                                                                                        }
+
+                                                                                                                                                                                            .btn_comprar:hover{
+                                                                                                                                                                                                background: #333;
                                                                                                                                                                                                                             }
 
-                                                                                                                                                                                                                            /* IMAGEM */
-                                                                                                                                                                                                                            .imagem_produto{
-                                                                                                                                                                                                                                width: 100%;
-                                                                                                                                                                                                                                    height: 180px;
-                                                                                                                                                                                                                                        object-fit: contain;
-                                                                                                                                                                                                                                            background: #f2f2f2;
-                                                                                                                                                                                                                                                padding: 10px;
-                                                                                                                                                                                                                                                    border-radius: 8px;
-                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        #carrinho{
+                                                                                                                                    list-style: none;
+                                                                                                                                        padding: 0;
+                                                                                                                                            }
 
-                                                                                                                                                                                                                                                    /* TEXTO */
-                                                                                                                                                                                                                                                    .d_produto{
-                                                                                                                                                                                                                                                        font-weight: bold;
-                                                                                                                                                                                                                                                            margin: 10px 0;
-                                                                                                                                                                                                                                                            }
+                                                                                                                                            #carrinho li{
+                                                                                                                                        border-bottom: 1px solid #e5e5e5;
+                                                                                                                                            margin: 10px 0;
+                                                                                                                                        padding-bottom: 5px;
+                                                                                                                                                }
 
-                                                                                                                                                                                                                                                            .p_produto{
-                                                                                                                                                                                                                                                                color: #777;
-                                                                                                                                                                                                                                                                    font-size: 18px;
-                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                @media (max-width: 768px){
+                                                                                                                                                .container{
+                                                                                                                                                grid-template-areas: 
+                                                                                                                                                "header"
+                                                                                                                                                "main"
+                                                                                                                                                "aside"
+                                                                                                                                                    "footer";
+                                                                                                                                                    grid-template-columns: 1fr;
+                                                                                                                                                    }
 
-                                                                                                                                                                                                                                                                    /* BOTÃO */
-                                                                                                                                                                                                                                                                    .btn_comprar{
-                                                                                                                                                                                                                                                                        background: #111;
-                                                                                                                                                                                                                                                                            color: #fff;
-                                                                                                                                                                                                                                                                                border: none;
-                                                                                                                                                                                                                                                                                    padding: 10px;
-                                                                                                                                                                                                                                                                                        width: 100%;
-                                                                                                                                                                                                                                                                                            border-radius: 6px;
-                                                                                                                                                                                                                                                                                                cursor: pointer;
-                                                                                                                                                                                                                                                                                                    font-weight: bold;
-                                                                                                                                                                                                                                                                                                        transition: 0.3s;
-                                                                                                                                                                                                                                                                                                        }
-
-                                                                                                                                                                                                                                                                                                        .btn_comprar:hover{
-                                                                                                                                                                                                                                                                                                            background: #333;
-                                                                                                                                                                                                                                                                                                            }
-
-                                                                                                                                                                                                                                                                                                            /* CARRINHO */
-                                                                                                                                                                                                                                                                                                            #carrinho{
-                                                                                                                                                                                                                                                                                                                list-style: none;
-                                                                                                                                                                                                                                                                                                                    padding: 0;
-                                                                                                                                                                                                                                                                                                                    }
-
-                                                                                                                                                                                                                                                                                                                    #carrinho li{
-                                                                                                                                                                                                                                                                                                                        border-bottom: 1px solid #e5e5e5;
-                                                                                                                                                                                                                                                                                                                            margin: 10px 0;
-                                                                                                                                                                                                                                                                                                                                padding-bottom: 5px;
-                                                                                                                                                                                                                                                                                                                                }
-
-                                                                                                                                                                                                                                                                                                                                /* RESPONSIVO */
-                                                                                                                                                                                                                                                                                                                                @media (max-width: 768px){
-                                                                                                                                                                                                                                                                                                                                    .container{
-                                                                                                                                                                                                                                                                                                                                            grid-template-areas: 
-                                                                                                                                                                                                                                                                                                                                                        "header"
-                                                                                                                                                                                                                                                                                                                                                                    "main"
-                                                                                                                                                                                                                                                                                                                                                                                "aside"
-                                                                                                                                                                                                                                                                                                                                                                                            "footer";
-                                                                                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 1fr;
-                                                                                                                                                                                                                                                                                                                                                                                                        }
-
-                                                                                                                                                                                                                                                                                                                                                                                                            .aside{
-                                                                                                                                                                                                                                                                                                                                                                                                                    border-right: none;
-                                                                                                                                                                                                                                                                                                                                                                                                                            border-top: 1px solid #e5e5e5;
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                    .aside{
+                                                                                                                                                    border-right: none;
+                                                                                                                                                    border-top: 1px solid #e5e5e5;
+                                                                                                                                                    }
+                                                                                                                                                    }
