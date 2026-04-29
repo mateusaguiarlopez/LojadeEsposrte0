@@ -26,7 +26,7 @@ display: grid;
                                                                 
     .header{
     grid-area: header;
-    background: #ffffff;
+    background: #f7f8f8;
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid #e5e5e5;
@@ -41,7 +41,7 @@ display: grid;
                                                                             
     .aside{
     grid-area: aside;
-background: #fafafa;
+background: #fafbfc;
     padding: 20px;
     border-right: 1px solid #e5e5e5;
     }
@@ -112,7 +112,7 @@ background: #ffffff;
     }
 
     .p_produto{
-    color: #777;
+    color: #131212;
     font-size: 18px;
     }
 
